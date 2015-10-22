@@ -3,7 +3,7 @@ require 'yaml'
 require 'fixnum'
 
 module DestatisCli
-  class DestatisCli
+  class Client
 
     public
     # read custom config files specific for for class instance
