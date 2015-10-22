@@ -1,0 +1,6 @@
+lang: de #language for the results of webservice requests
+area: alle
+format: datencsv
+start: 2015
+end: current_year
+compression: false

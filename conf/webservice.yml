@@ -1,0 +1,365 @@
+# change these values only if you notice differences to the official documentation on
+# https://www-genesis.destatis.de/genesis/online?Menu=Webservice
+url: https://www-genesis.destatis.de/genesisWS/services
+services:
+  dl:
+    realname: DownloadService
+    methods:
+      diag:
+        realname: diagramm_download
+        params:
+          format: format
+          diagram_type: diagrammTyp
+          draw_points: zeichnePunkte
+          zoom: zoom
+          start: startjahr
+          end: endjahr
+          time_slices: zeitscheiben
+          feature: sachmerkmal
+          feature_key: sachschluessel
+          lang: sprache
+      excel:
+        realname: excel_download
+        params:
+          compression: komprimierung
+          start: startjahr
+          end: endjahr
+          time_slices: zeitscheiben
+          regional_key: regionalschluessel
+          feature: sachmerkmal
+          feature_key: sachschluessel
+          lang: sprache
+      map:
+        realname: karte_download
+        params:
+          grid: gitternetz
+          class_number: klassenanzahl
+          class_division: klasseneinteilung
+          row_selection: reihenauswahl
+          regional_key: regionalschluessel
+          lang: sprache
+      tab:
+        realname: tabellen_download
+        params:
+          format: format
+          compression: komprimierung
+          start: startjahr
+          end: endjahr
+          time_slices: zeitscheiben
+          regional_key: regionalschluessel
+          feature: sachmerkmal
+          feature_key: sachschluessel
+          lang: sprache
+  dl_2009:
+    realname: DownloadService_2009
+    methods:
+      diag:
+        realname: diagramm_download
+        params:
+          format: format
+          diagram_type: diagrammTyp
+          draw_points: zeichnePunkte
+          zoom: zoom
+          value_focus: wertefokus
+          start: startjahr
+          end: endjahr
+          time_slices: zeitscheiben
+          regional_feature: regionalmerkmal
+          regional_key: regionalschluessel
+          feature: sachmerkmal
+          feature_key: sachschluessel
+          feature2: sachmerkmal2
+          feature_key2: sachschluessel2
+          feature3: sachmerkmal3
+          feature_key3: sachschluessel3
+          job: auftrag
+          status: stand
+          lang: sprache
+      result:
+        realname: ergebnis_download
+        params:
+          format: format
+          compress: komprimieren
+          lang: sprache
+      result_diag:
+        realname: ergebnis_diagramm_download
+        params:
+          format: format
+          diagram_type: diagrammTyp
+          draw_points: zeichnePunkte
+          zoom: zoom
+          value_focus: wertefokus
+          lang: sprache
+      result_map:
+        realname: ergebnis_karte_download
+        params:
+          grid: gitternetz
+          class_number: klassenanzahl
+          class_division: klasseneinteilung
+          row_selection: reihenauswahl
+          lang: sprache
+      excel:
+        realname: excel_download
+        params:
+          compress: komprimieren
+          transpone: transponieren
+          start: startjahr
+          end: endjahr
+          time_slices: zeitscheiben
+          regional_feature: regionalmerkmal
+          regional_key: regionalschluessel
+          feature: sachmerkmal
+          feature_key: sachschluessel
+          feature2: sachmerkmal2
+          feature_key2: sachschluessel2
+          feature3: sachmerkmal3
+          feature_key3: sachschluessel3
+          job: auftrag
+          status: stand
+          lang: sprache
+      map:
+        realname: karte_download
+        params:
+      tab:
+        realname: tabellen_download
+        params:
+      time_ser:
+        realname: zeitreihen_download
+        params:
+  dl_2010:
+    realname: DownloadService_2010
+    methods:
+      diag:
+        realname: diagramm_download
+        params:
+      result:
+        realname: ergebnis_download
+        params:
+      result_diag:
+        realname: ergebnis_diagramm_download
+        params:
+      result_map:
+        realname: ergebnis_karte_download
+        params:
+      excel:
+        realname: excel_download
+        params:
+      map:
+        realname: karte_download
+        params:
+      tab:
+        realname: tabellen_download
+        params:
+      time_ser:
+        realname: zeitreihen_download
+        params:
+  exp:
+    realname: ExportService
+    methods:
+      data:
+        realname: daten_export
+        params:
+      obj:
+        realname: objekt_export
+        params:
+      tab:
+        realname: tabellen_export
+        params:
+  exp_2009:
+    realname: ExportService_2009
+    methods:
+      data:
+        realname: daten_export
+        params:
+      result:
+        realname: ergebnis_export
+        params:
+      obj:
+        realname: objekt_export
+        params:
+      stat_prop:
+        realname: statistik_eigenschaften
+        params:
+      tab_struct:
+        realname: tabelle_aufbau
+        params:
+      tab:
+        realname: tabellen_export
+        params:
+      time_ser:
+        realname: zeitreihen_export
+        params:
+  exp_2010:
+    realname: ExportService_2010
+    methods:
+      char_inf:
+        realname: auspraegung_information
+        params:
+      data_struct:
+        realname: daten_aufbau
+        params:
+      data:
+        realname: daten_export
+        params:
+      result:
+        realname: ergebnis_export
+        params:
+      attrib_info:
+        realname: merkmal_information
+        params:
+      obj:
+        realname: objekt_export
+        params:
+      stat_prop:
+        realname: statistik_eigenschaften
+        params:
+      stat_info:
+        realname: statistik_information
+        params:
+      tab_struct:
+        realname: tabelle_aufbau
+        params:
+      tab:
+        realname: tabellen_export
+        params:
+      time_ser_struct:
+        realname: zeitreihe_aufbau
+        params:
+      time_ser:
+        realname: zeitreihen_export
+        params:
+  research:
+    realname: Recherche
+    methods:
+      research:
+        realname: recherche
+        params:
+      data:
+        realname: daten_katalog
+        params:
+      res:
+        realname: ergebnis_katalog
+        params:
+      prop:
+        realname: merkmals_katalog
+        params:
+      prop_char:
+        realname: merkmal_auspraegungen_katalog
+        params:
+      stat:
+        realname: statistik_katalog
+        params:
+      tab:
+        realname: tabellen_katalog
+        params:
+      time_ser:
+        realname: zeitreihen_katalog
+        params:
+  research_2009:
+    realname: RechercheService_2009
+    methods:
+      research:
+        realname: recherche
+        params:
+      order:
+        realname: auftraege_katalog
+        params:
+      terms:
+        realname: begriffe_katalog
+        params:
+      data:
+        realname: daten_katalog
+        params:
+      res:
+        realname: ergebnis_katalog
+        params:
+      prop:
+        realname: merkmals_katalog
+        params:
+      prop_char:
+        realname: merkmal_auspraegungen_katalog
+        params:
+      stat:
+        realname: statistik_katalog
+        params:
+      tab:
+        realname: tabellen_katalog
+        params:
+      time_ser:
+        realname: zeitreihen_katalog
+        params:
+  research_2010:
+    realname: RechercheService_2010
+    methods:
+      research:
+        realname: recherche
+        params:
+      order:
+        realname: auftraege_katalog
+        params:
+      terms:
+        realname: begriffe_katalog
+        params:
+      data:
+        realname: daten_katalog
+        params:
+      res:
+        realname: ergebnis_katalog
+        params:
+      prop:
+        realname: merkmals_katalog
+        params:
+      prop_char:
+        realname: merkmal_auspraegungen_katalog
+        params:
+      prop_data:
+        realname: merkmal_daten_katalog
+        params:
+      prop_stat:
+        realname: merkmal_statistiken_katalog
+        params:
+      prop_tab:
+        realname: merkmal_tabellen_katalog
+        params:
+      prop_time_ser:
+        realname: merkmal_zeitreihen_katalog
+        params:
+      new_data:
+        realname: neue_daten_katalog
+        params:
+      stat:
+        realname: statistik_katalog
+        params:
+      stat_data:
+        realname: statistik_daten_katalog
+        params:
+      stat_prop:
+        realname: statistik_merkmal_katalog
+        params:
+      stat_tab:
+        realname: statistik_tabellen_katalog
+        params:
+      stat_time_ser:
+        realname: statistik_zeitreihen_katalog
+        params:
+      tab:
+        realname: tabellen_katalog
+        params:
+      symb:
+        realname: zeichen_katalog
+        params:
+      time_ser:
+        realname: zeitreihen_katalog
+        params:
+  test:
+    realname: TestService
+    methods:
+      exeption:
+        realname: exception
+        params:
+      logonoff:
+        realname: logonoff
+        params:
+      whoami:
+        realname: whoami
+        params:
