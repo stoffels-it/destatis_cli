@@ -120,237 +120,713 @@ services:
       map:
         realname: karte_download
         params:
+          grid: gitternetz
+          class_number: klassenanzahl
+          class_division: klasseneinteilung
+          row_selection: reihenauswahl
+          regional_feature: regionalmerkmal
+          regional_key: regionalschluessel
+          job: auftrag
+          status: stand
+          lang: sprache
       tab:
         realname: tabellen_download
         params:
+          format: format
+          compress: komprimieren
+          transpone: transponieren
+          start: startjahr
+          end: endjahr
+          time_slices: zeitscheiben
+          regional_feature: regionalmerkmal
+          regional_key: regionalschluessel
+          feature: sachmerkmal
+          feature_key: sachschluessel
+          feature2: sachmerkmal2
+          feature_key2: sachschluessel2
+          feature3: sachmerkmal3
+          feature_key3: sachschluessel3
+          job: auftrag
+          status: stand
+          lang: sprache
       time_ser:
         realname: zeitreihen_download
         params:
+          format: format
+          compress: komprimieren
+          transpone: transponieren
+          start: startjahr
+          end: endjahr
+          time_slices: zeitscheiben
+          regional_feature: regionalmerkmal
+          regional_key: regionalschluessel
+          feature: sachmerkmal
+          feature_key: sachschluessel
+          feature2: sachmerkmal2
+          feature_key2: sachschluessel2
+          feature3: sachmerkmal3
+          feature_key3: sachschluessel3
+          job: auftrag
+          status: stand
+          lang: sprache
   dl_2010:
     realname: DownloadService_2010
     methods:
       diag:
         realname: diagramm_download
         params:
+          format: format
+          diagram_type: diagrammTyp
+          draw_points: zeichnePunkte
+          zoom: zoom
+          value_focus: wertefokus
+          monochrome: monochrom
+          tops: tops
+          start: startjahr
+          end: endjahr
+          time_slices: zeitscheiben
+          regional_feature: regionalmerkmal
+          regional_key: regionalschluessel
+          feature: sachmerkmal
+          feature_key: sachschluessel
+          feature2: sachmerkmal2
+          feature_key2: sachschluessel2
+          feature3: sachmerkmal3
+          feature_key3: sachschluessel3
+          job: auftrag
+          status: stand
+          lang: sprache
       result:
         realname: ergebnis_download
         params:
+          format: format
+          compress: komprimieren
+          lang: sprache
       result_diag:
         realname: ergebnis_diagramm_download
         params:
+          format: format
+          diagram_type: diagrammTyp
+          draw_points: zeichnePunkte
+          zoom: zoom
+          value_focus: wertefokus
+          monochrome: monochrom
+          tops: tops
+          lang: sprache
       result_map:
         realname: ergebnis_karte_download
         params:
+          format: format
+          map_type: kartentyp
+          grid: gitternetz
+          class_number: klassenanzahl
+          class_division: klasseneinteilung
+          row_selection: reihenauswahl
+          monochrome: monochrom
+          lang: lang
       excel:
         realname: excel_download
         params:
+          compress: komprimieren
+          transpone: transponieren
+          start: startjahr
+          end: endjahr
+          time_slices: zeitscheiben
+          regional_feature: regionalmerkmal
+          regional_key: regionalschluessel
+          feature: sachmerkmal
+          feature_key: sachschluessel
+          feature2: sachmerkmal2
+          feature_key2: sachschluessel2
+          feature3: sachmerkmal3
+          feature_key3: sachschluessel3
+          job: auftrag
+          status: stand
+          lang: sprache
       map:
         realname: karte_download
         params:
+          format: format
+          map_type: kartentyp
+          grid: gitternetz
+          class_count: klassenanzahl
+          class_division: klasseneinteilung
+          monochrome: monochrom
+          start: startjahr
+          end: endjahr
+          time_slices: zeitscheiben
+          regional_feature: regionalmerkmal
+          regional_key: regionalschluessel
+          feature: sachmerkmal
+          feature_key: sachschluessel
+          feature2: sachmerkmal2
+          feature_key2: sachschluessel2
+          feature3: sachmerkmal3
+          feature_key3: sachschluessel3
+          job: auftrag
+          status: stand
+          lang: sprache
       tab:
         realname: tabellen_download
         params:
+          format: format
+          compress: komprimieren
+          transpone: transponieren
+          start: startjahr
+          end: endjahr
+          time_slices: zeitscheiben
+          regional_feature: regionalmerkmal
+          regional_key: regionalschluessel
+          feature: sachmerkmal
+          feature_key: sachschluessel
+          feature2: sachmerkmal2
+          feature_key2: sachschluessel2
+          feature3: sachmerkmal3
+          feature_key3: sachschluessel3
+          job: auftrag
+          status: stand
+          lang: sprache
       time_ser:
         realname: zeitreihen_download
         params:
+          format: format
+          compress: komprimieren
+          transpone: transponieren
+          start: startjahr
+          end: endjahr
+          time_slices: zeitscheiben
+          contents: inhalte
+          regional_feature: regionalmerkmal
+          regional_key: regionalschluessel
+          regional_key_code: regionalschluesselcode
+          feature: sachmerkmal
+          feature_key: sachschluessel
+          feature_key_code: sachschluesselcode
+          feature2: sachmerkmal2
+          feature_key2: sachschluessel2
+          feature_key_code2: sachschluesselcode2
+          feature3: sachmerkmal3
+          feature_key3: sachschluessel3
+          feature_key_code3: sachschluesselcode3
+          job: auftrag
+          status: stand
+          lang: sprache
   exp:
     realname: ExportService
     methods:
       data:
         realname: daten_export
         params:
+          format: format
+          values: werte
+          metadata: metadaten
+          addition: zusatz
+          start: startjahr
+          end: endjahr
+          time_slices: zeitscheiben
+          regional_key: regionalschluessel
+          feature: sachmerkmal
+          feature_key: sachschluessel
+          state: stand
+          lang: sprache
       obj:
         realname: objekt_export
         params:
+          format: format
+          extent: umfang
+          addition: zusatz
+          lang: sprache
       tab:
         realname: tabellen_export
         params:
+          format: format
+          structure_info: strukturinformation
+          compression: komprimierung
+          start: startjahr
+          end: endjahr
+          time_slices: zeitscheiben
+          regional_key: regionalschluessel
+          feature: sachmerkmal
+          feature_key: sachschluessel
+          lang: sprache
   exp_2009:
     realname: ExportService_2009
     methods:
       data:
         realname: daten_export
         params:
+          format: format
+          values: werte
+          metadata: metadaten
+          addition: zusatz
+          start: startjahr
+          end: endjahr
+          time_slices: zeitscheiben
+          regional_feature: regionalmerkmal
+          regional_key: regionalschluessel
+          feature: sachmerkmal
+          feature_key: sachschluessel
+          feature2: sachmerkmal2
+          feature_key2: sachschluessel2
+          feature3: sachmerkmal3
+          feature_key3: sachschluessel3
+          state: stand
+          lang: sprache
       result:
         realname: ergebnis_export
         params:
+          format: format
+          compress: komprimieren
+          lang: sprache
       obj:
         realname: objekt_export
         params:
+          format: format
+          extent: umfang
+          addition: zusatz
+          lang: sprache
       stat_prop:
         realname: statistik_eigenschaften
         params:
+          lang: sprache
       tab_struct:
         realname: tabelle_aufbau
         params:
+          lang: sprache
       tab:
         realname: tabellen_export
         params:
+          format: format
+          structure_info: strukturinformation
+          compress: komprimieren
+          transpone: transponieren
+          start: startjahr
+          end: endjahr
+          time_slices: zeitscheiben
+          regional_feature: regionalmerkmal
+          regional_key: regionalschluessel
+          feature: sachmerkmal
+          feature_key: sachschluessel
+          feature2: sachmerkmal2
+          feature_key2: sachschluessel2
+          feature3: sachmerkmal3
+          feature_key3: sachschluessel3
+          state: stand
+          job: auftrag
+          lang: sprache
       time_ser:
         realname: zeitreihen_export
         params:
+          format: format
+          structure_info: strukturinformation
+          compress: komprimieren
+          transpone: transponieren
+          start: startjahr
+          end: endjahr
+          time_slices: zeitscheiben
+          regional_feature: regionalmerkmal
+          regional_key: regionalschluessel
+          feature: sachmerkmal
+          feature_key: sachschluessel
+          feature2: sachmerkmal2
+          feature_key2: sachschluessel2
+          feature3: sachmerkmal3
+          feature_key3: sachschluessel3
+          state: stand
+          job: auftrag
+          lang: sprache
   exp_2010:
     realname: ExportService_2010
     methods:
       char_inf:
         realname: auspraegung_information
         params:
+          lang: sprache
       data_struct:
         realname: daten_aufbau
         params:
+          lang: sprache
       data:
         realname: daten_export
         params:
+          format: format
+          values: werte
+          metadata: metadaten
+          addition: zusatz
+          start: startjahr
+          end: endjahr
+          time_slices: zeitscheiben
+          contents: inhalte
+          regional_feature: regionalmerkmal
+          regional_key: regionalschluessel
+          feature: sachmerkmal
+          feature_key: sachschluessel
+          feature2: sachmerkmal2
+          feature_key2: sachschluessel2
+          feature3: sachmerkmal3
+          feature_key3: sachschluessel3
+          state: stand
+          lang: sprache
       result:
         realname: ergebnis_export
         params:
+          format: format
+          compress: komprimieren
+          lang: sprache
       attrib_info:
         realname: merkmal_information
         params:
+          lang: sprache
       obj:
         realname: objekt_export
         params:
+          format: format
+          extent: umfang
+          addition: zusatz
+          lang: sprache
       stat_prop:
         realname: statistik_eigenschaften
         params:
+          lang: sprache
       stat_info:
         realname: statistik_information
         params:
+          lang: sprache
       tab_struct:
         realname: tabelle_aufbau
         params:
+          lang: sprache
       tab:
         realname: tabellen_export
         params:
+          format: format
+          structure_info: strukturinformation
+          compress: komprimieren
+          transpone: transponieren
+          start: startjahr
+          end: endjahr
+          time_slices: zeitscheiben
+          regional_feature: regionalmerkmal
+          regional_key: regionalschluessel
+          feature: sachmerkmal
+          feature_key: sachschluessel
+          feature2: sachmerkmal2
+          feature_key2: sachschluessel2
+          feature3: sachmerkmal3
+          feature_key3: sachschluessel3
+          state: stand
+          job: auftrag
+          lang: sprache
       time_ser_struct:
         realname: zeitreihe_aufbau
         params:
+          lang: sprache
       time_ser:
         realname: zeitreihen_export
         params:
+          format: format
+          structure_info: strukturinformation
+          compress: komprimieren
+          transpone: transponieren
+          start: startjahr
+          end: endjahr
+          time_slices: zeitscheiben
+          contents: inhalte
+          regional_feature: regionalmerkmal
+          regional_key: regionalschluessel
+          regional_key_code: regionalschluesselcode
+          feature: sachmerkmal
+          feature_key: sachschluessel
+          feature_key_code: sachschluesselcode
+          feature2: sachmerkmal
+          feature_key2: sachschluessel
+          feature_key_code2: sachschluesselcode
+          feature3: sachmerkmal
+          feature_key3: sachschluessel
+          feature_key_code3: sachschluesselcode
+          status: stand
+          job: auftrag
+          lang: sprache
   research:
     realname: Recherche
     methods:
       research:
         realname: recherche
         params:
+          list_len: listenLaenge
+          lang: sprache
+          cat: kategorie
       data:
         realname: daten_katalog
         params:
+          list_len: listenLaenge
+          lang: sprache
       res:
         realname: ergebnis_katalog
         params:
+          list_len: listenLaenge
+          lang: sprache
       prop:
         realname: merkmals_katalog
         params:
+          format: format
+          criterion: kriterium
+          type: typ
+          area: bereich
+          list_len: listenLaenge
+          lang: sprache
       prop_char:
         realname: merkmal_auspraegungen_katalog
         params:
+          name: name
+          selection: auswahl
+          area: bereich
+          list_len: listenLaenge
+          lang: sprache
       stat:
         realname: statistik_katalog
         params:
+          filter: filter
+          criterion: kriterium
+          list_len: listenLaenge
+          lang: sprache
       tab:
         realname: tabellen_katalog
         params:
+          filter: filter
+          area: bereich
+          list_len: listenLaenge
+          lang: sprache
       time_ser:
         realname: zeitreihen_katalog
         params:
+          filter: filter
+          area: bereich
+          list_len: listenLaenge
+          lang: sprache
   research_2009:
     realname: RechercheService_2009
     methods:
       research:
         realname: recherche
         params:
+          list_len: listenLaenge
+          lang: sprache
+          category: kategorie
       order:
         realname: auftraege_katalog
         params:
+          list_len: listenLaenge
+          lang: sprache
       terms:
         realname: begriffe_katalog
         params:
+          filter: filter
+          list_len: listenLaenge
+          lang: sprache
       data:
         realname: daten_katalog
         params:
+          filter: filter
+          area: bereich
+          list_len: listenLaenge
+          lang: sprache
       res:
         realname: ergebnis_katalog
         params:
+          filter: filter
+          area: bereich
+          list_len: listenLaenge
+          lang: sprache
       prop:
         realname: merkmals_katalog
         params:
+          filter: filter
+          criterion: kriterium
+          type: typ
+          area: bereich
+          list_len: listenLaenge
+          lang: sprache
       prop_char:
         realname: merkmal_auspraegungen_katalog
         params:
+          name: name
+          selection: auswahl
+          area: bereich
+          list_len: listenLaenge
+          lang: sprache
       stat:
         realname: statistik_katalog
         params:
+          filter: filter
+          criterion: kriterium
+          list_len: listenLaenge
+          lang: sprache
       tab:
         realname: tabellen_katalog
         params:
+          filter: filter
+          area: bereich
+          list_len: listenLaenge
+          lang: sprache
       time_ser:
         realname: zeitreihen_katalog
         params:
+          filter: filter
+          area: bereich
+          list_len: listenLaenge
+          lang: sprache
   research_2010:
     realname: RechercheService_2010
     methods:
       research:
         realname: recherche
         params:
+          list_len: listenLaenge
+          lang: sprache
+          category: kategorie
       order:
         realname: auftraege_katalog
         params:
+          list_len: listenLaenge
+          lang: sprache
       terms:
         realname: begriffe_katalog
         params:
+          filter: filter
+          list_len: listenLaenge
+          lang: sprache
       data:
         realname: daten_katalog
         params:
+          filter: filter
+          area: bereich
+          list_len: listenLaenge
+          lang: sprache
       res:
         realname: ergebnis_katalog
         params:
+          filter: filter
+          area: bereich
+          list_len: listenLaenge
+          lang: sprache
       prop:
         realname: merkmals_katalog
         params:
+          filter: filter
+          criterion: kriterium
+          type: typ
+          area: bereich
+          list_len: listenLaenge
+          lang: sprache
       prop_char:
         realname: merkmal_auspraegungen_katalog
         params:
+          name: name
+          selection: auswahl
+          criterion: kriterium
+          area: bereich
+          list_len: listenLaenge
+          lang: sprache
       prop_data:
         realname: merkmal_daten_katalog
         params:
+          name: name
+          selection: auswahl
+          area: bereich
+          list_len: listenLaenge
+          lang: sprache
       prop_stat:
         realname: merkmal_statistiken_katalog
         params:
+          name: name
+          selection: auswahl
+          criterion: kriterium
+          area: bereich
+          list_len: listenLaenge
+          lang: sprache
       prop_tab:
         realname: merkmal_tabellen_katalog
         params:
+          name: name
+          selection: auswahl
+          area: bereich
+          list_len: listenLaenge
+          lang: sprache
       prop_time_ser:
         realname: merkmal_zeitreihen_katalog
         params:
+          name: name
+          selection: auswahl
+          area: bereich
+          list_len: listenLaenge
+          lang: sprache
       new_data:
         realname: neue_daten_katalog
         params:
+          filter: filter
+          type: typ
+          state: stand
+          list_len: listenLaenge
+          lang: sprache
       stat:
         realname: statistik_katalog
         params:
+          filter: filter
+          criterion: kriterium
+          list_len: listenLaenge
+          lang: sprache
       stat_data:
         realname: statistik_daten_katalog
         params:
+          name: name
+          selection: auswahl
+          area: bereich
+          list_len: listenLaenge
+          lang: sprache
       stat_prop:
         realname: statistik_merkmal_katalog
         params:
+          name: name
+          selection: auswahl
+          criterion: kriterium
+          area: bereich
+          list_len: listenLaenge
+          lang: sprache
       stat_tab:
         realname: statistik_tabellen_katalog
         params:
+          name: name
+          selection: auswahl
+          area: bereich
+          list_len: listenLaenge
+          lang: sprache
       stat_time_ser:
         realname: statistik_zeitreihen_katalog
         params:
+          name: name
+          selection: auswahl
+          area: bereich
+          list_len: listenLaenge
+          lang: sprache
       tab:
         realname: tabellen_katalog
         params:
+          filter: filter
+          area: bereich
+          list_len: listenLaenge
+          lang: sprache
       symb:
         realname: zeichen_katalog
         params:
+          lang: sprache
       time_ser:
         realname: zeitreihen_katalog
         params:
+          filter: filter
+          area: bereich
+          list_len: listenLaenge
+          lang: sprache
   test:
     realname: TestService
     methods:
