@@ -1,7 +1,5 @@
 # destatis_cli
-Webservice client for the GENESIS webservice of german "Statistisches Bundesamt" (Destatis) currently using savon "Heavy metal SOAP client": https://github.com/savonrb/savon
-
-https://www-genesis.destatis.de/genesis/online?Menu=Webservice
+Webservice client for the GENESIS webservice of german "Statistisches Bundesamt" [Destatis](https://www-genesis.destatis.de/genesis/online?Menu=Webservice) currently using [savon](https://github.com/savonrb/savon) "Heavy metal SOAP client".
 
 * Please be aware, that the account for data access is available free of charge but for automated data queries (e.g. via the webservice) you need to pay an annual fee.
 * Set some defaults in examples/conf/webs_custom.yml, enter your account data into examples/conf/secrets.yml and use the module according to the example scripts.
