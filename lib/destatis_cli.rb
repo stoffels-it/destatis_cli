@@ -69,6 +69,7 @@ module DestatisCli
     end
 
     def valid_request_method?(service, method)
+      valid = false
       @ext_conf['services'].each do |service_short, service_value|
         # find or assign service name
         if (service == service_short || service == service_value['realname'])
