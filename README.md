@@ -5,17 +5,21 @@ Webservice client for the GENESIS webservice of german "Statistisches Bundesamt"
 * Set some defaults in *examples/conf/webs_custom.yml*, enter your account data into *examples/conf/secrets.yml* and use the module according to the example scripts.
 * You can choose between different data formats for the result. *[in progress]*
 * Find a reference about the available services, methods and parameters in *conf/webservice.yml*. Service and method must be provided with the *Client.new* statement. The parameters can be set via the custom config file. You can use the short names like e.g. "dl", "diag" for service and method, but also the original terms "DownloadService", "diagramm_download".
+* requirements: ruby >= 2.2.2
 
 # Build gem from source
 
-* git clone https://github.com/stoffels-it/destatis_cli.git
-* if you had an older gem version of destatis_cli installed before, check it with gem list --local
-* and uninstall it with gem uninstall destatis_cli
-* cd destatis_cli
-* gem build destatis_cli.gemspec
-* gem install destatis_cli-0.1.0.gem (insert current version here)
-* create a conf directory in your code directory and copy examples/conf/* to it
-* rename conf/secrets_sample.yml to conf/secrets.yml and insert your credentials there, adapt conf/webs_custom.yml if required
+* download the repo with your user account: `git clone https://github.com/stoffels-it/destatis_cli.git`
+* `cd destatis_cli`
+* `gem build destatis_cli.gemspec`
+* become root in your system
+* if you had an older gem version of destatis_cli installed before, check it with `gem list --local`
+* and uninstall it with `gem uninstall destatis_cli`
+* you will need ruby header files, so install e.g. in Debian: `apt-get install ruby-dev`
+* install destatis_cli: `gem install destatis_cli-0.1.0.gem` (insert current version here)
+* logout from root account
+* create a conf directory in your code directory and copy `examples/conf/*` to it
+* rename `conf/secrets_sample.yml` to `conf/secrets.yml` and insert your credentials there, adapt `conf/webs_custom.yml` if required
 * start with an example like:
 ```ruby
 require 'destatis_cli'
