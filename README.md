@@ -14,7 +14,8 @@ Webservice client for the GENESIS webservice of german "Statistisches Bundesamt"
 * cd destatis_cli
 * gem build destatis_cli.gemspec
 * gem install destatis_cli-0.1.0.gem (insert current version here)
-* insert your credentials into the file conf/secrets.yml and adapt webs_custom.yml if required
+* create a conf directory in your code directory and copy examples/conf/* to it
+* rename conf/secrets_sample.yml to conf/secrets.yml and insert your credentials there, adapt conf/webs_custom.yml if required
 * start with an example like:
 ```ruby
 require 'destatis_cli'
