@@ -9,7 +9,7 @@ Webservice client for the GENESIS webservice of german "Statistisches Bundesamt"
 
 ## Build gem from source
 
-* download the repo with your user account: `git clone https://github.com/stoffels-it/destatis_cli.git`
+* download the repo: `git clone https://github.com/stoffels-it/destatis_cli.git`
 * `cd destatis_cli`
 * `gem build destatis_cli.gemspec`
 * become root in your system
